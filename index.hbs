@@ -2,7 +2,61 @@
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header --}}
-<header class="main-header {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+<header>
+<article id="cc-slider">
+      <input checked="checked" name="cc-slider" id="slide1" type="radio">
+      <input name="cc-slider" id="slide2" type="radio">
+      <input name="cc-slider" id="slide3" type="radio">
+      <input name="cc-slider" id="slide4" type="radio">
+      <input name="cc-slider" id="slide5" type="radio">
+      <div id="cc-slides">
+        <div id="overflow">
+          <div class="inner">
+            <article>
+              <div class="cctooltip">
+                <h3>Amazing / Photoshop / Photography</h3>
+                <h4>By <a href="#">codeconvey</a></h4>
+              </div>
+              <img src="images/slide-1.jpg"> 
+            </article>
+            <article>
+              <div class="cctooltip">
+                <h3>Abstract Retro Photography</h3>
+                <h4>By <a href="#">codeconvey</a></h4>
+              </div>
+              <img src="images/slide-2.jpg"> </article>
+            <article>
+              <div class="cctooltip">
+                <h3>Street Photography</h3>
+                <h4>By <a href="#">codeconvey</a></h4>
+              </div>
+              <img src="images/slide-3.jpg"> 
+            </article>
+            <article>
+              <div class="cctooltip">
+                <h3>Portrait / Woman / Photography</h3>
+                <h4>By <a href="#">codeconvey</a></h4>
+              </div>
+              <img src="images/slide-4.jpg"> 
+            </article>
+            <article>
+              <div class="cctooltip">
+                <h3>Fashion / Sport / Photography</h3>
+                <h4>By <a href="#">codeconvey</a></h4>
+              </div>
+              <img src="images/slide-5.jpg"> 
+            </article>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+      </div>
+    </article>
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
