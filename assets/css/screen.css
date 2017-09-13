@@ -2268,12 +2268,12 @@ body.page-template .post-title {
 }
 
 #cc-slider label, a {
-	color: #ef023f;
+	color: #8EC640;
 	cursor: pointer;
 	text-decoration: none;
 }
 #cc-slider label:hover {
-	color: #ff0042 !important;
+	color: #8EC640 !important;
 }
 
 #slide1:checked ~ #cc-slides .inner { margin-left:0; }
@@ -2344,7 +2344,7 @@ body.page-template .post-title {
 #slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(5), 
 #slide5:checked ~ #controls label:nth-child(1) {
-	background: url('../images/next.png') no-repeat;
+	background: url('../next.png') no-repeat;
 	float: right;
 	margin: 0 10px 0 0;
 	display: block;
@@ -2357,7 +2357,7 @@ body.page-template .post-title {
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3),
 #slide5:checked ~ #controls label:nth-child(4) {
-	background: url('../images/prev.png') no-repeat;
+	background: url('../prev.png') no-repeat;
 	float: left;
 	margin: 0 0 0 17px;
 	display: block;
